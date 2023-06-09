@@ -1,0 +1,14 @@
+USE sucos;
+
+DELETE FROM tbprodutos WHERE COD_PRODUTO = '524631';
+
+DELETE FROM tabela_de_vendedores WHERE MATRICULA = '00233';
+
+ALTER TABLE tbprodutos ADD PRIMARY KEY (COD_PRODUTO);
+
+ALTER TABLE tabela_de_vendedores ADD COLUMN (DATA_ADMISSAO DATE);
+
+ALTER TABLE tabela_de_vendedores ADD COLUMN (CAMPO_DE_FERIAS BIT);
+
+ALTER TABLE tabela_de_vendedores ADD PRIMARY KEY (MATRICULA);
+

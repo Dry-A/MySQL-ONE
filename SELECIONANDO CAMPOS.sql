@@ -1,0 +1,27 @@
+SELECT * FROM tbcliente;
+
+SELECT CPF, NOME, BAIRRO, IDADE, SEXO, VOLUME_COMPRA FROM tbcliente;
+
+SELECT CPF, NOME FROM tbcliente;
+
+SELECT CPF, NOME FROM tbcliente LIMIT 9;
+
+SELECT CPF AS CPF_CLIENTE, NOME AS NOME_DO_SORTUDO FROM tbcliente;
+
+SELECT CPF AS CPF_CLIENTE, NOME AS LISTA_CLIENTES_FORTES FROM tbcliente LIMIT 5;
+
+SELECT NOME, MATRICULA FROM tabela_de_vendedores;
+
+SELECT * FROM tbproduto WHERE PRODUTO = '544931';
+
+SELECT * FROM tbproduto WHERE SABOR = 'Limão';
+
+UPDATE tbproduto SET SABOR = 'Cítrico' WHERE SABOR = 'Limão';
+
+SELECT * FROM tbproduto WHERE SABOR = 'Cítrico';
+
+SELECT * FROM tbcliente WHERE CIDADE = 'São Paulo';
+
+SELECT * FROM tbcliente WHERE IDADE = 22;
+
+
